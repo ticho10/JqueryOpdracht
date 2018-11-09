@@ -1,0 +1,54 @@
+body {
+    font-family: Bellerose;
+    padding: 0;
+    margin: 0;;
+    /*om de footer onder te pagina te zetten*/
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* h1 main (is variabel) footer*/
+}
+h1{
+    text-align: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: .5em;
+    /*voor de animatie in jQ*/
+    position: relative;
+}
+
+@media screen and (min-width: 400px) {
+    main{
+        grid-template-columns: 1fr ;
+    }
+}
+@media screen and (min-width: 614px) {
+    main{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+/*LELIJK*/
+/*@media screen and (min-width: 864px) {*/
+    /*main{*/
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*}*/
+/*}*/
+@media screen and (min-width: 1000px) {
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.portret{
+    background: lime;
+}
+
